@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link href="output.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- MODAL -->
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box">
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            </form>
+            <div class="rounded-lg w-full p-5">
+
+                <label class="input input-bordered flex items-center gap-2">
+                    Email
+                    <input type="text" class="grow" placeholder="daisy@site.com" />
+                </label>
+                <label class="input input-bordered flex items-center gap-2 mt-5">
+                    Titre
+                    <input type="text" class="grow" placeholder="Titre" />
+                </label>
+
+                <div class="form-control">
+                    <label class="label flex justify-center">
+                        <span class="label-text">Votre message</span>
+                    </label>
+                    <textarea class="textarea textarea-bordered h-24 w-full"
+                        placeholder="Votre message"></textarea>
+                </div>
+            <div class="flex justify-center items-center mt-5">
+                <button type="submit" class="btn bg-gray-600 text-gray-100 shadow-md">
+                    Envoyer
+                </button>
+            </div>
+
+            </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog>
+    <!-- CV -->
+    <div class="bg-gradient-to-br from-blue-400 via-gray-300 to-zinc-400 h-full z-0 relative text-gray-700">
+        <div class="container mx-auto py-10 px-5 z-10 relative">
+            <div class="max-w-4xl mx-auto bg-white bg-opacity-90 rounded-lg shadow-md overflow-hidden glow-border">
+                <div class="p-4 sm:p-6">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h2 class="text-2xl font-semibold mr-2">Paul Decauchy</h2>
+                            <p class="text-sm text-gray-600 mr-2">Back-End Developer</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-600">Téléphone: 06 79 89 79 96</p>
+                            <p class="text-sm text-gray-600 hover">Email: <a href="mailto:decauchypaul@gmail.com"
+                                    class="ho">decauchypaul@gmail.com</a></p>
+                            <p class="text-sm text-gray-600">Location: Paris</p>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2">A propos</h3>
+                        <p class="text-sm leading-relaxed"> Je suis passionné par les technologies dans plusieurs
+                            domaines (de l'audio au textile
+                            en passant bien évidemment par l'informatique). J'ai pour objectif de
+                            renforcer mes connaissances dans les langages back-end pendant mes études en MSc Pro.</p>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-lg font-semibold mb-2">Experience</h3>
+                        <div>
+                            <h4 class="text-md font-semibold">Ubisoft</h4>
+                            <p class="text-sm text-gray-600">Back-End Developer Assistant | 2023 - 2024</p>
+                            <ul class="list-disc list-inside text-sm">
+                                <li>Montée en compétence sur les bénéfices et enjeux dérivés de lʼutilisation de la
+                                    blockchain dans les jeux vidéo;</li>
+                                <li>Participation à la récolte et à lʼanalyse des besoins des projets, et réflexion sur
+                                    les
+                                    solutions adéquates</li>
+                                <li>Écriture, test, débogage et révision du code pour les logiciels back‑end, en
+                                    apportant
+                                    de la qualité en réponse aux spécifications
+                                </li>
+                                <li>
+                                    Lecture et interprétation de la documentation des projets, ainsi que leur création
+                                    afin
+                                    d'enrichir le partage de connaissance;
+                                </li>
+                                <li>Apport de modifications sur le code basées sur des améliorations de design et de
+                                    retours utilisateur;
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-lg font-semibold mb-2">Formation</h3>
+                        <div>
+                            <h4 class="text-md font-semibold">MSc Pro</h4>
+                            <p class="text-sm text-gray-600">Epitech | 2024 - </p>
+                        </div>
+                        <div>
+                            <h4 class="text-md font-semibold">Formation Web Developer</h4>
+                            <p class="text-sm text-gray-600">Web@académie | 2022 - 2024</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-lg font-semibold mb-2">Compétences</h3>
+                        <ul class="list-disc list-inside text-sm">
+                            <li>Langages de Programmation: GO, PHP, JavaScript</li>
+                            <li>Frameworks & Libraries: Echo, Gin, Laravel, Symfony, Express</li>
+                            <li>Base de données: MongoDB, MySQL, PostgreSQL</li>
+                            <li>Méthodologies Agile: Scrum, Kanban</li>
+                            <li>Outils DevOps: Docker</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-lg font-semibold mb-2">Langues</h3>
+                        <div>
+                            <p class="text-md font-semibold">Anglais</p>
+                            <div class="bar-container">
+                                <div class="bar english">C2</div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-md font-semibold">Espagnol</p>
+                            <div class="bar-container">
+                                <div class="bar spanish">B2</div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-md font-semibold">Chinois</p>
+                            <div class="bar-container">
+                                <div class="bar chinese">A2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center mt-5">
+                        <button class="btn shadow-md bg-gray-600 text-gray-100"
+                            onclick="my_modal_1.showModal()">Contactez-Moi</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
